@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="org.michaelbel.template.ui.view.MainFragment"
+        android:label="Main"/>
+
+    <fragment
+        android:id="@+id/adsFragment"
+        android:name="org.michaelbel.template.ads.AdsFragment"
+        android:label="Ads"
+        tools:layout="@layout/fragment_ads"/>
+
+    <fragment
+        android:id="@+id/constraintsBaselineFragment"
+        android:name="org.michaelbel.template.constraintlayout.ConstrainsBaselineFragment"
+        android:label="ConstrainsBaseline"/>
+
+    <fragment
+        android:id="@+id/constraintsChainStyleFragment"
+        android:name="org.michaelbel.template.constraintlayout.ConstrainsChainsFragment"
+        android:label="ConstrainsChainStyle"/>
+
+    <fragment
+        android:id="@+id/constraintsCircularFragment"
+        android:name="org.michaelbel.template.constraintlayout.ConstrainsCircularFragment"
+        android:label="ConstrainsCircular"/>
+
+    <fragment
+        android:id="@+id/constraintsConstrainedWidthFragment"
+        android:name="org.michaelbel.template.constraintlayout.ConstrainsConstrainedWidthFragment"
+        android:label="ConstrainsConstrainedWidth"/>
+
+    <fragment
+        android:id="@+id/constraintsGoneMarginFragment"
+        android:name="org.michaelbel.template.constraintlayout.ConstrainsGoneMarginsFragment"
+        android:label="ConstrainsGoneMargin"/>
+
+    <fragment
+        android:id="@+id/constraintsGuidelineFragment"
+        android:name="org.michaelbel.template.constraintlayout.ConstrainsGuidelineFragment"
+        android:label="ConstrainsGuideline"/>
+
+    <fragment
+        android:id="@+id/fontsFragment"
+        android:name="org.michaelbel.template.fonts.FontsFragment"
+        android:label="Fonts"/>
+
+    <fragment
+        android:id="@+id/storageFragment"
+        android:name="org.michaelbel.template.storage.StorageFragment"
+        android:label="Storage">
+
+        <argument
+            android:name="notificationsCount"
+            android:defaultValue="0"
+            app:argType="integer"/>
+
+    </fragment>
+
+</navigation>
